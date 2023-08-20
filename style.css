@@ -26,6 +26,13 @@ ion-icon {
     margin-left: 2px;
 }
 
+#container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto 0;
+    padding: 0 24px;
+}
+
 :root {
     --border-color: rgba(107, 142, 35, 0.1);
     --bg-color-link: rgba(107, 142, 35, 0.2);
@@ -34,13 +41,6 @@ ion-icon {
 }
 
 /* Home Page */
-
-#container {
-    width: 100%;
-    max-width: 400px;
-    margin: 100px auto 0;
-    padding: 0 24px;
-}
 
 #foto_casal {
     text-align: center;
@@ -81,6 +81,34 @@ ion-icon {
 }
 
 #lista_home li a:hover {
+    background-color: var(--bg-color-link-hover);
+    border: 1.5px solid var(--border-color-hover);
+}
+
+/* Page lista de presentes */
+
+#lista_presentes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+}
+
+#lista_presentes li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--bg-color-link);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    font-family: "Inter", sans-serif;
+    transition: background 0.3s;
+}
+
+#lista_presentes li a:hover {
     background-color: var(--bg-color-link-hover);
     border: 1.5px solid var(--border-color-hover);
 }
