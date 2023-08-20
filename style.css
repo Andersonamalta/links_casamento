@@ -1,3 +1,5 @@
+/* Global CSS*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,26 @@
 body {
     background: url(./assets/bg.jpg) no-repeat top center/cover;
     height: 100vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: "Alex Brush", cursive;
+}
+
+ion-icon {
+    color: rgba(107, 142, 35, 0.8);
+    margin-left: 2px;
+}
+
+:root {
+    --border-color: rgba(107, 142, 35, 0.1);
+    --bg-color-link: rgba(107, 142, 35, 0.2);
+    --border-color-hover: rgba(107, 142, 35, 0.2);
+    --bg-color-link-hover: rgba(107, 142, 35, 0.3);
 }
 
 /* Home Page */
@@ -49,9 +71,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 16px 24px;
-    border: 1px solid rgba(107, 142, 35, 0.1);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
-    background-color: rgba(107, 142, 35, 0.2);
+    background-color: var(--bg-color-link);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     font-family: "Inter", sans-serif;
@@ -59,19 +81,6 @@ body {
 }
 
 #lista_home li a:hover {
-    background-color: rgba(107, 142, 35, 0.3);
-    border: 1.5px solid rgba(107, 142, 35, 0.2);
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    font-size: 20px;
-    font-family: "Alex Brush", cursive;
-}
-
-ion-icon {
-    color: rgba(107, 142, 35, 0.8);
-    margin-left: 2px;
+    background-color: var(--bg-color-link-hover);
+    border: 1.5px solid var(--border-color-hover);
 }
