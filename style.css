@@ -87,14 +87,14 @@ ion-icon {
 
 /* Page lista de presentes */
 
-#lista_presentes {
+#categorias {
     display: flex;
     flex-direction: column;
     gap: 16px;
     padding: 24px 0;
 }
 
-#lista_presentes li a {
+#categorias li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,7 +108,7 @@ ion-icon {
     transition: background 0.3s;
 }
 
-#lista_presentes li a:hover {
+#categorias li a:hover {
     background-color: var(--bg-color-link-hover);
     border: 1.5px solid var(--border-color-hover);
 }
