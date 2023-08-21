@@ -120,12 +120,24 @@ ion-icon {
     flex-direction: column;
     gap: 16px;
     padding: 24px 0;
-    background-color: var(--bg-color-link);
 }
 
 #lista_presentes li {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding: 16px 24px;
+    background-color: var(--bg-color-link);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    color: #1c1c1c;
+    font-family: "Inter", sans-serif;
+    transition: background 0.3s;
+}
+
+#lista_presentes li:hover {
+    background-color: var(--bg-color-link-hover);
+    border: 1.5px solid var(--border-color-hover);
 }
